@@ -42,7 +42,7 @@ We made use of:
 In order to build and run our app:
 
 1. Harvest yourself some unicorn tears. They're expensive to purchase on your own.
-2. Deploy your the code to [Heroku](http://heroku.com)
+2. [Deploy your the code](https://github.com/masylum/Brainfuck-on-Rails) to [Heroku](http://heroku.com)
 3. Profit
 
 Our code is licensed under the [ABRMS](https://github.com/landondyer/kasm/blob/master/LICENSE) license. Pull requests will be accepted to this repo.
