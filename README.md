@@ -6,7 +6,7 @@ This application was developed on February 5th, 2015 for the [Evergreen Awesome 
 
 ![Isn't our app beautiful?!](screenshot.jpg)
 
-You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
+Our app is live at http://example.com/awesome-app-that-doesnt-exist. You can log in as the demo user "unicorns" with password "sartfarkles". You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
 
 ## Challenge and Approach
 
@@ -42,7 +42,7 @@ We made use of:
 In order to build and run our app:
 
 1. Harvest yourself some unicorn tears. They're expensive to purchase on your own.
-2. Deploy your the code to [Heroku](http://heroku.com)
+2. [Deploy your the code](https://github.com/masylum/Brainfuck-on-Rails) to [Heroku](http://heroku.com)
 3. Profit
 
 Our code is licensed under the [MIT License](LICENSE.md) license. Pull requests will be accepted to this repo, pending review and approval.
