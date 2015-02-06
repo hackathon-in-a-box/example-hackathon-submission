@@ -24,10 +24,10 @@ Once we did that, we knew we were guaranteed to win!
 
 Our team is comprised of:
 
-- @chrismetcalf - README.md author and all around awesome guy
-- @torvalds - Wrangler of penguins
-- @matz - Miner of Rubies
-- @gvanrossum - Python charmer
+- [@chrismetcalf](http://github.com/chrismetcalf) - README.md author and all around awesome guy
+- [@torvalds](http://github.com/torvalds) - Wrangler of penguins
+- [@matz](http://github.com/matz) - Miner of Rubies
+- [@gvanrossum](http://github.com/gvanrossum) - Python charmer
 
 ## Technologies, APIs, and Datasets Utilized
 
