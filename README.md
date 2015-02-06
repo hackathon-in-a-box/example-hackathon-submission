@@ -45,4 +45,4 @@ In order to build and run our app:
 2. Deploy your the code to [Heroku](http://heroku.com)
 3. Profit
 
-Our code is licensed under the [ABRMS](https://github.com/landondyer/kasm/blob/master/LICENSE) license. Pull requests will be accepted to this repo.
+Our code is licensed under the [MIT License](LICENSE.md) license. Pull requests will be accepted to this repo, pending review and approval.
