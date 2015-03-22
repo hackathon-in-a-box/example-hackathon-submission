@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
   <script src="/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLhw12hTzbrWIAIepH3EoDvKGs1WhetTQ"></script>
   <script type="text/javascript" src="https://apicdn.walkscore.com/api/v1/traveltime_widget/js?wsid=3950dacfe4b9f83564d394cab5e9fb88"></script>
   <script type="text/javascript">
@@ -15,14 +16,10 @@
         document.getElementById("map-canvas"),
         {
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          center: new google.maps.LatLng(47.61460, -122.31704),
+          center: new google.maps.LatLng(47.6066,-122.335832),
           zoom: 13
         }
       );
-
-      var neighborhoods = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/seattle_named_neighborhoods.geojson');
-
-      var pronto = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/pronto_locations.geojson');
 
       var styles = [
         {
@@ -49,15 +46,25 @@
       map.setOptions({styles: styles});
 
       try {
-        pronto
+
+        // Data Imports //
+
+        var neighborhoods = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/seattle_named_neighborhoods.geojson');
+        var pronto = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/pronto_locations.geojson');
+
+        // Styling the Data //
+
+
       }
 
       finally {
+        var inputTime = 40
         var widget = new walkscore.TravelTimeWidget({
           map: map,
-          origin: '47.61460,-122.31704',
+          origin: '47.6066,-122.335832',
           show: true,
-          mode: walkscore.TravelTime.Mode.DRIVE
+          mode: walkscore.TravelTime.Mode.DRIVE,
+          time: inputTime
         });
       }
     }
