@@ -1,0 +1,44 @@
+
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+#footer {
+  background-color: #939598;
+  width: 100%;
+  height: 60px;
+  position: aboslute;
+  bottom: 0px;
+}
+
+#commute-menu {
+  background-color: #939598;
+  margin-bottom: 0px;
+}
+
+#commute-menu .container-fluid {
+  padding: 10px;
+}
+
+#commute-menu p {
+  color: white;
+  margin-bottom: 0px;
+}
+
+#commute-options {
+  height: 100%;
+  padding-top: 20px;
+}
+
+#commute-options .row {
+  padding-bottom: 30px;
+}
+
+#commute-map {
+  padding: 0px;
+}
+
+#overlay-icon {
+
+}
