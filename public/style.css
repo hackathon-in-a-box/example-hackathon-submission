@@ -17,6 +17,10 @@ a:hover {
   color: green;
 }
 
+.navbar-brand img{
+  height: 60px;
+}
+
 .video-wrapper {
   width: 100%;
   height: 700px;
@@ -38,6 +42,10 @@ a:hover {
   width: 100%;
   color: white;
   font-size: 2em;
+}
+
+.intro-wrapper img {
+  margin: -60px;
 }
 
 .navbar {
@@ -89,6 +97,7 @@ a:hover {
   padding: 0px;
 }
 
-#overlay-icon {
-
+#overlay-logo {
+  position: fixed;
+  bottom: 0px;
 }
