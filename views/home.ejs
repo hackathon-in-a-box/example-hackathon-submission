@@ -1,7 +1,13 @@
 <% include /header %>
 
-<div class="container">
+<div class="video-wrapper">
+  <video autoplay loop loop="loop" preload="auto" id="pretzel-video" class="video-playing">
+    <source src="splash.mp4" type="video/mp4">
+  </video>
+  <div class="learn-more"></div>
+</div>
 
+<div class="intro-wrapper container">
 
 <div class="col-sm-offset-3 col-sm-6 text-center">
 
@@ -14,9 +20,9 @@
   </div>
 
   <div class="row">
-    <button type="button" class="btn btn-success">30 min</button>
-    <button type="button" class="btn btn-success">45 min</button>
-    <button type="button" class="btn btn-success">60 min</button>
+    <button type="button" class="btn btn-deafult">30 min</button>
+    <button type="button" class="btn btn-deafult">45 min</button>
+    <button type="button" class="btn btn-deafult">60 min</button>
   </div>
 
 </div>

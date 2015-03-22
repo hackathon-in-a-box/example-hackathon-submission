@@ -17,6 +17,29 @@ a:hover {
   color: green;
 }
 
+.video-wrapper {
+  width: 100%;
+  height: 700px;
+  z-index: -100;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-playing {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 560px;
+}
+
+.intro-wrapper {
+  position:  absolute;
+  top: 100px;
+  width: 100%;
+  color: white;
+  font-size: 2em;
+}
+
 .navbar {
   border-radius: 0px;
   margin-bottom: 0px;
