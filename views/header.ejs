@@ -22,13 +22,7 @@
 
       var neighborhoods = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/seattle_named_neighborhoods.geojson');
 
-      layer = new google.maps.FusionTablesLayer({
-                query: {
-                  select: '\'Address\'',
-                  from: '1mZ53Z70NsChnBMm-qEYmSDOvLXgrreLTkQUvvg'
-                }
-              });
-              layer.setMap(map);
+      var pronto = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/pronto_locations.geojson');
 
       var styles = [
         {
@@ -49,30 +43,15 @@
           stylers: [
             { visibility: "off" }
           ]
-        },
-
-
-        {
-          polygonOptions: {
-            fillColor: "#rrggbb",
-            strokeColor: "#rrggbb",
-            strokeWeight: "int"
-          },
-          polylineOptions: {
-            strokeColor: "#rrggbb",
-            strokeWeight: "int"  }
         }
-
-
-
-
       ];
 
       map.setOptions({styles: styles});
 
       try {
-        neighborhoods
+        pronto
       }
+
       finally {
         var widget = new walkscore.TravelTimeWidget({
           map: map,
