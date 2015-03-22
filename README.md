@@ -1,46 +1,51 @@
-# Seattle Hack The Commute.  Team Geo Hackers for Good.  Work2Home
-
+# Seattle Hack The Commute.  Team Geo Hackers for Good.
+Application Name: WorkOrbit
 This application was developed on March 22, 2015 for the [Seattle Hack the Commute](http://hackthecommute.seattle.gov/).
 
-![Isn't our app beautiful?!](screenshot.jpg)
-
-Our app is live at http://example.com/awesome-app-that-doesnt-exist. You can log in as the demo user "unicorns" with password "sartfarkles". You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
+![Isn't our app beautiful?!](http://i.imgur.com/i0s7Mr6.png)
+Our app is live at http://example.com/awesome-app-that-doesnt-exist.
 
 ## Challenge and Approach
 
-Our submission is for [Challenge #3: Build an app that provides an example of an Awesome Hackathon submission](http://example.com/this-also-goes-nowhere).
+Our submission is for Challenge #5: Encourage users to select options that relieve pressure on the overall transportation.
+We aim to help new residents of Seattle find the right neighborhood with an experience that encourages informed transit choices.
 
 Our approach for satisfying this challenge was to:
 
-- Develop an example Git repository
-- Share it on Github
-- Collect feedback from the community
+- Interviewed various residents about the challenges and priorities they identified when selecting housing
+- Looked deeply at available datasets to discover ways to guide citizens relocating to the Seattle area toward better informed decisions
+- Considered off-the-shelf API solutions to meet time constraints
+- Discussed various design directions with mentors to distill down the decision tree for a natural user experience
+- Focused and interated on intuitive, clean design to avoid information overload
 
-Once we did that, we knew we were guaranteed to win!
 
 ## Team Members
 
 Our team is comprised of:
 
-- [@chrismetcalf](http://github.com/chrismetcalf) - README.md author and all around awesome guy
-- [@torvalds](http://github.com/torvalds) - Wrangler of penguins
-- [@matz](http://github.com/matz) - Miner of Rubies
-- [@gvanrossum](http://github.com/gvanrossum) - Python charmer
+- Allan Yeung[@alyeung](https://github.com/alyeung) - Project Management & Presentation
+- Adrienne Kerr[@JungleDre](https://github.com/jungledre) - Front-end & Mapping Technology
+- Andy Barr[@elandybarr](https://github.com/elandybarr) - Mapping Technology
+- Darren Mills[@DarrenMills](https://github.com/DarrenRM) - UX & Design
 
 ## Technologies, APIs, and Datasets Utilized
 
 We made use of:
 
-- Hand harvested unicorn tears. Unicorns are very happy creatures, its hard to make them cry.
-- [mod_bf](http://modbf.sourceforge.net/)
-- The [Top 1,000 Songs To Hear Before You Die](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni) dataset and [API](http://dev.socrata.com/foundry/#/opendata.socrata.com/ed74-c6ni)
+- Pronto Bike Share Locations & Data
+- SDOT Public Garage Data
+- Neighborhood Shapes KC GIS
+- Google Maps API
+- Walkscore API
+- Express JS
 
 ## Contributing
 
-In order to build and run our app:
+If you'd like to contribute please contact Adrienne Kerr [@JungleDre](https://github.com/jungledre).
 
-1. Harvest yourself some unicorn tears. They're expensive to purchase on your own.
-2. [Deploy your the code](https://github.com/masylum/Brainfuck-on-Rails) to [Heroku](http://heroku.com)
-3. Profit
+Next Steps:
+1. Home / Apartment Search Partners
+2. Deeper implementation of data sets
+3. Market as work & city relocation service
 
 Our code is licensed under the [MIT License](LICENSE.md). Pull requests will be accepted to this repo, pending review and approval.

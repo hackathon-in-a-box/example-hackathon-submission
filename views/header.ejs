@@ -16,7 +16,7 @@
         document.getElementById("map-canvas"),
         {
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          center: new google.maps.LatLng(47.6066,-122.335832),
+          center: new google.maps.LatLng(47.6080279,-122.3228995),
           zoom: 13
         }
       );
@@ -61,7 +61,7 @@
         var inputTime = 40
         var widget = new walkscore.TravelTimeWidget({
           map: map,
-          origin: '47.6066,-122.335832',
+          origin: '47.6080279,-122.3228995',
           show: true,
           mode: walkscore.TravelTime.Mode.DRIVE,
           time: inputTime
@@ -78,7 +78,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Work Orbit</a>
       <ol class="nav navbar-nav">
-        <li class=""><a href="/map">Commuting Options</a></li>
+        <li class=""><a href="/map/car/40">Commuting Options</a></li>
         <li class=""><a href="/about">About</a></li>
       </ol>
     </div>

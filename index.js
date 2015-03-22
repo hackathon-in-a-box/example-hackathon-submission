@@ -6,9 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-
   res.render('home');
-
 });
 
 app.get('/about', function(req, res){
@@ -16,8 +14,8 @@ app.get('/about', function(req, res){
 });
 
 app.get('/map/car/:id', function(req, res){
- console.log(req.params);
- res.render('car');
+  // var input_address = $("#inputAddress").val();
+  res.render('car');
 });
 
 app.get('/map/bike/:id', function(req, res){
