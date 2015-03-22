@@ -2,46 +2,58 @@
 
 <div id="commute-menu">
   <div class="container-fluid">
-<!--     <a href="/map">Bus</a>
-    <a href="/map">Bike</a>
-    <a href="/map">Bus</a>
-    <a href="/map">Walk</a> -->
-    <p class="">1100 2nd Avenue #500, Seattle, WA 98101</p>
+    <p class="text-uppercase">Work Address: 1100 2nd Avenue #500, Seattle, WA 98101</p>
   </div>
 </div>
 
-<div class="container col-sm-6" id="commute-options">
+<div class="container col-sm-6 commute-options">
 
-  <h4>Summary</h4>
+  <div class="row" style="padding-bottom: 0px">
+    <h4 class="text-uppercase">Summary</h4>
+    <p>45m commute</p>
+  </div>
 
   <div class="row">
-    <div class="col-sm-6">
+    <div class="">
       <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-car fa-stack-1x fa-inverse"></i></span>
-      Bus
-      <p>Cost: $$$</p>
-      <p>Time: min</p>
-    </div>
-
-    <div class="col-sm-6">
-      <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-bicycle fa-stack-1x fa-inverse"></i></span>
-      Bike
-      <p>Cost: $$$</p>
-      <p>Time: min</p>
+      <h4 style="display: inline;">Car</h4>
+      <br><br>
+      <p>Time: 20 min</p>
+      <p>Cost: $25/day</p>
+      <br>
+      <p><strong>Neighborhoods:</strong> Downtown, Belltown, First Hill, Capitol Hill</p>
+      <p><strong>Tips:</strong> Commute times vary depending on construction, traffic, etc.</p>
     </div>
   </div>
+
   <div class="row">
-    <div class="col-sm-6">
-      <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-bus fa-stack-1x fa-inverse"></i></span>
-      Bus
-      <p>Cost: $$$</p>
-      <p>Time: min</p>
+    <p class="text-uppercase text-center">Explore Additional Options</p>
+
+    <div class="col-sm-4">
+        <div class="text-center">
+          <a href="/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-bicycle fa-stack-1x fa-inverse"></i></span></a>
+          <h4>Bike</h4>
+        </div>
+        <p>Time: 30 min</p>
+        <p>Cost: $1/day</p>
     </div>
 
-    <div class="col-sm-6">
-      <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-male fa-stack-1x fa-inverse"></i></span>
-      Walk
-      <p>Cost: $$$</p>
-      <p>Time: min</p>
+    <div class="col-sm-4">
+      <div class="text-center">
+        <a href="/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-bus fa-stack-1x fa-inverse"></i></span></a>
+        <h4>Bus</h4>
+      </div>
+      <p>Time: 30 min</p>
+      <p>Cost: $5/day</p>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="text-center">
+        <a href="/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-male fa-stack-1x fa-inverse"></i></span></a>
+        <h4>Walk</h4>
+      </div>
+      <p>Time: 60 min</p>
+      <p>Cost: $0</p>
     </div>
   </div>
 
@@ -53,9 +65,6 @@
   <div class="" style="background-color: grey; height: 100%;">
   </div>
 </div>
-
-
-
 
 
 <% include /footer %>
