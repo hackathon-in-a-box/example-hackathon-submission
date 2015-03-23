@@ -1,0 +1,69 @@
+<% include ../views/header %>
+
+<div id="commute-menu">
+  <div class="container-fluid">
+    <p class="text-uppercase">Work Address: 1100 2nd Avenue #500, Seattle, WA 98101</p>
+  </div>
+</div>
+
+<div class="container col-sm-6 commute-options">
+
+  <div class="row commute-main">
+    <h4 class="text-uppercase">Summary</h4>
+    <p style="color: #337AB7";>40 min commute</p>
+    <br>
+    <div class="">
+      <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-car fa-stack-1x fa-inverse"></i></span>
+      <h4 style="display: inline;">Car</h4>
+      <br><br>
+      <p>Time: 40 min</p>
+      <p>Cost: $25/day</p>
+      <br>
+      <p><strong>Neighborhoods:</strong> Downtown, Belltown, First Hill, Capitol Hill</p>
+      <p><strong>Tips: </strong>There are thousands of parking spaces within walking distance of major attractions. Getting a spot often takes time and money, so the cost of car ownership can be high. </p>
+    </div>
+  </div>
+
+  <div class="row commute-additional">
+    <p class="text-uppercase text-center">Explore Additional Options</p>
+
+    <div class="col-sm-4">
+        <div class="text-center">
+          <a href="/map/bike/40"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-bicycle fa-stack-1x fa-inverse"></i></span></a>
+          <h4>Bike</h4>
+        </div>
+        <p>Time: 40 min</p>
+        <p>Cost: $4/day</p>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="text-center">
+        <a href="/map/bus/40"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-bus fa-stack-1x fa-inverse"></i></span></a>
+        <h4>Bus</h4>
+      </div>
+      <p>Time: 40 min</p>
+      <p>Cost: $5/day</p>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="text-center">
+        <a href="/map/walk/40"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-male fa-stack-1x fa-inverse"></i></span></a>
+        <h4>Walk</h4>
+      </div>
+      <p>Time: 40 min</p>
+      <p>Cost: $0</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid col-sm-6" id="commute-map">
+<!--   <span id="logo-overlay" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-car fa-stack-1x fa-inverse"></i></span>
+ -->
+  <div id="map-canvas" class="" style="background-color: grey; height: 100%;">
+<!--   <span class="overlay-logo"><img src="logo-blue.png"></span>
+ -->  </div>
+</div>
+
+
+<% include ../views/footer %>

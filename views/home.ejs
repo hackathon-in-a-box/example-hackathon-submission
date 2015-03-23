@@ -1,0 +1,33 @@
+<% include ../views/header %>
+
+<div class="video-wrapper">
+  <video autoplay loop loop="loop" preload="auto" id="pretzel-video" class="video-playing">
+    <source src="splash.mp4" type="video/mp4">
+  </video>
+  <div class="learn-more"></div>
+</div>
+
+<div class="intro-wrapper container">
+
+<div class="col-sm-offset-3 col-sm-6 text-center">
+
+  <div class="row">
+      <img src="logo-blue.png">
+      <h3>Where will you be working?</h3>
+      <div class="form-group">
+        <input type="text" id="inputAddress" class="form-control" name="text" placeholder="1100 2nd Avenue #500, Seattle, WA 98101">
+      </div>
+      <h3>How long are you willing to commute?</h3>
+  </div>
+
+  <div class="row">
+    <a href="/map/car/20"><button type="button" class="btn btn-primary" name="time" method="POST">20 min</button></a>
+    <a href="/map/car/40"><button type="button" class="btn btn-primary" name="time" method="POST">40 min</button></a>
+    <a href="/map/car/60"><button type="button" class="btn btn-primary" name="time" method="POST">60 min</button></a>
+  </div>
+
+</div>
+
+</div>s
+
+<% include ../views/footer %>

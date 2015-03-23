@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>Hackathon</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script src="/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLhw12hTzbrWIAIepH3EoDvKGs1WhetTQ"></script>
+  <script type="text/javascript" src="https://apicdn.walkscore.com/api/v1/traveltime_widget/js?wsid=3950dacfe4b9f83564d394cab5e9fb88"></script>
+  <script type="text/javascript">
+    function initialize() {
+
+      var map = new google.maps.Map(
+        document.getElementById("map-canvas"),
+        {
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: new google.maps.LatLng(47.6080279,-122.3228995),
+          zoom: 13
+        }
+      );
+
+      var styles = [
+        {
+          stylers: [
+            { hue: "#337AB7" },
+            { saturation: -20 }
+          ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+            { lightness: 100 },
+            { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+      ];
+
+      map.setOptions({styles: styles});
+
+      try {
+
+        // Data Imports //
+
+        var neighborhoods = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/seattle_named_neighborhoods.geojson');
+        var pronto = map.data.loadGeoJson('https://s3.amazonaws.com/geohackers-for-good/pronto_locations.geojson');
+
+        // Styling the Data //
+
+
+      }
+
+      finally {
+        var inputTime = 40
+        var widget = new walkscore.TravelTimeWidget({
+          map: map,
+          origin: '47.6080279,-122.3228995',
+          show: true,
+          mode: walkscore.TravelTime.Mode.DRIVE,
+          time: inputTime,
+          congestion: true
+        });
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Work Orbit</a>
+      <ol class="nav navbar-nav">
+        <li class=""><a href="/map/car/40">Commuting Options</a></li>
+        <li class=""><a href="/about">About</a></li>
+      </ol>
+    </div>
+  </nav>
